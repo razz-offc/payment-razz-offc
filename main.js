@@ -56,7 +56,7 @@
           navigator.clipboard.writeText(text).then(() => {
             // Show copied notification
             const notification = document.createElement('div');
-            notification.textContent = 'Copied to clipboard!';
+            notification.textContent = 'Berhasil Menyalin';
             notification.style.position = 'fixed';
             notification.style.bottom = '20px';
             notification.style.left = '50%';
@@ -74,7 +74,7 @@
               notification.remove();
             }, 2000);
           }).catch(err => {
-            console.error('Failed to copy: ', err);
+            console.error('Gagal Menyalin: ', err);
           });
         }
         
